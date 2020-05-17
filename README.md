@@ -1,10 +1,7 @@
 
 
-# # Create React Appは `buildpack` を使ってHerokuにアプリを作成をする！
-
+# ## Attention: Create React App with`buildpack
     $ heroku create xxxxx-react-frontend --buildpack mars/create-react-app
-
-test
 
 
 
