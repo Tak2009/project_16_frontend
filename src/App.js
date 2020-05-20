@@ -1,17 +1,19 @@
 import React from 'react';
-import './App.css';
 import PubsContainer from "./3_containers/PubsContainer"
+// import PubDetails from "./4_components/PubDetails"
 
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom';
 
-const App = () => {
+const App = (props) => {
+  console.log(props)
   return (
     <Router>
-    <div className="App">
-    <Route exact path="/pubs" render={routerProps => <PubsContainer {...routerProps}/>}/>
+    <div>
+    <Route path="/pubs" render={routerProps => <PubsContainer {...routerProps}/>}/>
+   
     </div>
     </Router>
   );

@@ -1,21 +1,53 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import '../App.css';
 
-const PubList = (props) => {
-    console.log(props)
-    const renderPubs= (pubs) => {
-        
-        return pubs.map(pub => (
+
+class PubList extends React.Component {
+
+    renderPubs= () => {
+        return this.props.pubs.map(pub => (
         <li key={pub.id}><Link key={pub.id} to={`/pubs/${pub.id}`}>{pub.name} | {pub.address}</Link>
-            
-            <p>{pub.email}</p>
+        <p>{pub.email}</p>
         </li>
         ));
     };
-
-    return (
-        renderPubs(props.pubs)
+        
+    render(){
+        console.log(this.props)
+        return (
+            <div className="list">
+              <h2>Pub List</h2>
+                {this.renderPubs()}
+            </div>
         )
+    }
 }
 
-export { PubList }
+
+
+// const PubList = (props) => {
+//     console.log(props)
+//     console.log(props.match.url)
+
+//     const renderPubs= (props) => {
+//         return props.pubs.map(pub => (
+//         <li key={pub.id}><Link key={pub.id} to={`/pubs/${pub.id}`}>{pub.name} | {pub.address}</Link>
+//         <p>{pub.email}</p>
+//         </li>
+//         ));
+//     };
+
+//     const renderDetails = (props) => {
+//         return (<Route path={`${props.match.url}:pubId`} render={routerProps => <PubDetails {...routerProps} pubs={props.pub} />}/>)
+//     }
+
+//     return (
+//         <div>
+//         {renderPubs(props)}
+//         {renderDetails(props)}
+//         </div>
+//     )
+// }
+
+export default PubList
