@@ -8,7 +8,10 @@ class PubList extends React.Component {
     renderPubs= () => {
         return this.props.pubs.map(pub => (
         <li key={pub.id}><Link key={pub.id} to={`/pubs/${pub.id}`}>{pub.name} | {pub.address}</Link>
-        <p>{pub.email}</p>
+            <div className="image-trim">
+                <img src={require(`../img/${pub.image_pic}`)} alt={pub.id}/>
+            </div>
+            <p></p>
         </li>
         ));
     };
