@@ -7,7 +7,7 @@ class PubList extends React.Component {
 
     renderPubs= () => {
         return this.props.pubs.map(pub => (
-        <li key={pub.id}><Link key={pub.id} to={`/pubs/${pub.id}`}>{pub.name} | {pub.address}</Link>
+        <li className="intend" key={pub.id}><Link key={pub.id} to={`/pubs/${pub.id}`}>{pub.name} | {pub.address}</Link>
             <div className="image-trim">
                 <img src={require(`../img/${pub.image_pic}`)} alt={pub.id}/>
             </div>
@@ -20,7 +20,7 @@ class PubList extends React.Component {
         console.log(this.props)
         return (
             <div className="list">
-              <h2>Pub List</h2>
+              <h2 className="intend">Pub List</h2>
                 {this.renderPubs()}
             </div>
         )

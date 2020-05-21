@@ -9,14 +9,15 @@ import {
     
   } from "../1_actions/PubsActions";
 
-//   import {
-//     ADD_REVIEW,
-//     SET_REVIEWS,
-//     DELETE_REVIEW
-//   } from "../1_actions/ReviewActions";
+  import {
+    SET_TICKETS,
+    // ADD_REVIEW,
+    // SET_REVIEWS,
+    // DELETE_REVIEW
+  } from "../1_actions/TicketsActions";
 
 
-const manageSites = (state = [], action) => {
+const managePubs = (state = [], action) => {
     // console.log(action)
     switch(action.type) {
         // case ADD_SITE:
@@ -58,31 +59,31 @@ const manageSites = (state = [], action) => {
     }
 };
 
-// const manageReviews = (state = [], action) => {
-//     // console.log(action)
-//     // debugger
-//     switch(action.type) {
-//         case SET_REVIEWS:
-//                     return action.reviews;
-//         case ADD_REVIEW:
-//             const review = {
-//                 id: action.review.id,
-//                 latinamerica_id: action.review.latinamerica_id,
-//                 comment: action.review.comment,
-//                 rating: action.review.rating
-//             }
-//             return [...state, review]
-//         case DELETE_REVIEW:
-//             return state.filter(review => review.id !== action.id)
-//         default:
-//             return state
-//     }
-// };
+const manageTickets = (state = [], action) => {
+    // console.log(action)
+    // debugger
+    switch(action.type) {
+        case SET_TICKETS:
+                    return action.tickets;
+        // case ADD_REVIEW:
+        //     const review = {
+        //         id: action.review.id,
+        //         latinamerica_id: action.review.latinamerica_id,
+        //         comment: action.review.comment,
+        //         rating: action.review.rating
+        //     }
+        //     return [...state, review]
+        // case DELETE_REVIEW:
+        //     return state.filter(review => review.id !== action.id)
+        default:
+            return state
+    }
+};
 
 
 const managePubsSupportersTickets = combineReducers({
-    pubs: manageSites,
-    // reviews: manageReviews
+    pubs: managePubs,
+    tickets: manageTickets
 });
 
 

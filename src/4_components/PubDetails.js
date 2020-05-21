@@ -1,5 +1,6 @@
 import React from "react";
 import Pub from "./Pub"
+import TicketsContainer from "../3_containers/TicketsContainer"
 
 
 class PubDetails extends React.Component {
@@ -20,6 +21,7 @@ class PubDetails extends React.Component {
               { this.selectPub() ?
                 <div className="details">
                     <Pub pub={this.selectPub()}/>
+                    <TicketsContainer/>
                 </div>
             : this.messageSwitch() }
           </div>

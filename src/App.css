@@ -43,3 +43,22 @@
   height: 100%;
   object-fit: cover;
 }
+
+.image-trim-2 {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60%; /* 比率 */
+}
+.image-trim-2 img {
+  position: absolute;
+  top: 55%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.intend{
+  text-indent: 1em;
+}

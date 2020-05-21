@@ -4,6 +4,12 @@
     $ heroku create xxxxx-react-frontend --buildpack mars/create-react-app
 
 
+ref: scroll to top
+https://blog.yuhiisk.com/archive/2017/04/13/react-router-location-change-scroll-top.html
+
+
+ref2: props.children
+https://westhillworker.com/react-props-children-biginner/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -74,5 +80,3 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
 
-
-test
