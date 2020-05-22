@@ -9,7 +9,8 @@ class PubList extends React.Component {
         return this.props.pubs.map(pub => (
         <li className="intend" key={pub.id}><Link key={pub.id} to={`/pubs/${pub.id}`}>{pub.name} | {pub.address}</Link>
             <div className="image-trim">
-                <img src={require(`../img/${pub.image_pic}`)} alt={pub.id}/>
+                {/* <img src={require(`../img/${pub.image_pic}`)} alt={pub.id}/> */}
+                <img src={pub.image_pic} alt={pub.id}/>
             </div>
             <p></p>
         </li>

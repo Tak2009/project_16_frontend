@@ -7,7 +7,8 @@ const renderDetails = (props) => {
         <div>
             <h2>Pub Details</h2>
             <div className="image-trim-2">
-                <img src={require(`../img/${props.pub.image_pic}`)} alt={props.pub.id}/>
+                {/* <img src={require(`../img/${props.pub.image_pic}`)} alt={props.pub.id}/> */}
+                <img src={props.pub.image_pic} alt={props.pub.id}/>
             </div>
             <p></p>
             

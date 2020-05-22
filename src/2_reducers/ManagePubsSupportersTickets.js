@@ -6,6 +6,7 @@ import { combineReducers } from "redux";
 import {
     
     SET_PUBS,
+    ADD_PUB,
     
   } from "../1_actions/PubsActions";
 
@@ -20,19 +21,21 @@ import {
 const managePubs = (state = [], action) => {
     // console.log(action)
     switch(action.type) {
-        // case ADD_SITE:
-        //     const site = {
-        //         id: action.site.id,
-        //         id_number: action.site.id_number,
-        //         site: action.site.site,
-        //         states: action.site.states,
-        //         short_description: action.site.short_description,
-        //         http_url: action.site.http_url
-        //     }
-        //     // console.log(site)
-        //     return [...state, site]
-        //     // return state.concat(site)
-        //     // return { sites: state.sites.concat(site) }
+        case ADD_PUB:
+            const pub = {
+                name: action.pub.name,
+                email: action.pub.email,
+                phone: action.pub.phone,
+                address: action.pub.address,
+                postcode: action.pub.postcode,
+                situation: action.pub.situation,
+                message_to_supporters: action.pub.message_to_supporters,
+                image_pic: action.pub.image_pic
+            }
+            // console.log(site)
+            return [...state, pub]
+            // return state.concat(site)
+            // return { sites: state.sites.concat(site) }
             
         case SET_PUBS:
             console.log(action.pubs)
