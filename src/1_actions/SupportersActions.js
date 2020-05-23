@@ -1,7 +1,7 @@
-export const SET_PUBS = "SET_PUBS"
-export const ADD_PUB = "ADD_PUB"
+export const SET_SUPPORTERS = "SET_SUPPORTERS"
+export const ADD_SUPPORTER = "ADD_SUPPORTER"
 
-export const addPub = pub => {
+export const addSupporter = pub => {
     return { type: ADD_PUB, pub };
 };
 

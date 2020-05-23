@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import '../App.css';
 
 
 const link = {
@@ -8,8 +9,7 @@ const link = {
   margin: '0 6px 6px',
   background: 'blue',
   textDecoration: 'none',
-  color: 'white',
-  
+  color: 'white'
 }
 
 
@@ -19,7 +19,7 @@ const NavBar = () => {
     <div className="navbar">
       <NavLink 
         style={link} 
-        to="/home"
+        to="/"
         activeStyle={{
           background: "darkblue"
         }}

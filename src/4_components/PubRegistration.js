@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import {Prompt} from 'react-router-dom'
 
 
 class PubRegistration extends Component {
@@ -11,7 +12,8 @@ class PubRegistration extends Component {
     postcode: "",
     situation: "",
     message_to_supporters: "",
-    image_pic: ""
+    image_pic: "",
+    submit: false
   }
 
   handleOnChange = (event) => {
@@ -22,9 +24,14 @@ class PubRegistration extends Component {
     })
   }
 
+  
+
   handleOnSubmit = (event) => {
     event.preventDefault()
-    this.props.createPub(this.state) 
+    this.props.createPub(this.state)
+    this.setState({
+      submit: true
+    })
     this.setState({
       name: "",
       email: "",
@@ -33,9 +40,14 @@ class PubRegistration extends Component {
       postcode: "",
       situation: "",
       message_to_supporters: "",
-      image_pic: ""
+      image_pic: "",
+      submit: false
+
     })
+    this.props.history.replace("/pubs")
   }
+
+　　
 
   render() {
     console.log(this.props)
@@ -43,6 +55,7 @@ class PubRegistration extends Component {
       <div>
           <br/>
            <h3>Pub Registration Form</h3>
+           <p>You will be redirected once you have completed your registration.</p>
             <form onSubmit={this.handleOnSubmit} className="form_style"> 
                 <label>Pub Name: <input name="name" onChange={this.handleOnChange} type="text" className="input" value={this.state.name}/></label>
                 <br/>
@@ -54,11 +67,12 @@ class PubRegistration extends Component {
                 <br/>
                 <label>Postcode: <input name="postcode" onChange={this.handleOnChange} type="text" className="input" value={this.state.postcode}/></label>
                 <br/>
-                <label>Situation: <input name="situation" onChange={this.handleOnChange} type="text" className="input" value={this.state.situation}/></label>
+                <label>Situation: <textarea name="situation" onChange={this.handleOnChange} type="text" className="input" value={this.state.situation}/></label>
                 <br/>
-                <label>Message to Supporters: <input name="message_to_supporters" onChange={this.handleOnChange} type="text" className="input" value={this.state.message_to_supporters}/></label>
+                <label>Message to Supporters: <textarea name="message_to_supporters" onChange={this.handleOnChange} type="text" className="input" value={this.state.message_to_supporters}/></label>
                 <br/>
                 <label>Pub Image URL (jpg): <input name="image_pic" onChange={this.handleOnChange} type="text" className="input" value={this.state.image_pic}/></label>
+                <br/>
                 <br/>
                 <input type="submit" value="Register"/>
             </form>

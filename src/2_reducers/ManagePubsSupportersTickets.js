@@ -1,5 +1,6 @@
 
 import { combineReducers } from "redux";
+import { reduxTokenAuthReducer as reduxTokenAuth } from "redux-token-auth"
 // import cuid from 'cuid';　// can not use this for ID as ID must be integer
 // export const cuidFn = cuid;
 
@@ -12,8 +13,7 @@ import {
 
   import {
     SET_TICKETS,
-    // ADD_REVIEW,
-    // SET_REVIEWS,
+    ADD_TICKET,
     // DELETE_REVIEW
   } from "../1_actions/TicketsActions";
 
@@ -68,14 +68,17 @@ const manageTickets = (state = [], action) => {
     switch(action.type) {
         case SET_TICKETS:
                     return action.tickets;
-        // case ADD_REVIEW:
-        //     const review = {
-        //         id: action.review.id,
-        //         latinamerica_id: action.review.latinamerica_id,
-        //         comment: action.review.comment,
-        //         rating: action.review.rating
-        //     }
-        //     return [...state, review]
+        case ADD_TICKET:
+            const ticket = {
+                message: action.ticket.message,
+                name: action.ticket.name,
+                email: action.ticket.email,
+                phone: action.ticket.phone,
+                address: action.ticket.address,
+                postcode: action.ticket.postcode,
+                pub_id: action.ticket.pub_id,
+            }
+            return [...state, ticket]
         // case DELETE_REVIEW:
         //     return state.filter(review => review.id !== action.id)
         default:
@@ -86,7 +89,8 @@ const manageTickets = (state = [], action) => {
 
 const managePubsSupportersTickets = combineReducers({
     pubs: managePubs,
-    tickets: manageTickets
+    tickets: manageTickets,
+    reduxTokenAuth: reduxTokenAuth
 });
 
 

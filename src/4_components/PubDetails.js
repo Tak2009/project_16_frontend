@@ -21,7 +21,7 @@ class PubDetails extends React.Component {
               { this.selectPub() ?
                 <div className="details">
                     <Pub pub={this.selectPub()}/>
-                    <TicketsContainer/>
+                    <TicketsContainer pub={this.selectPub()}/>
                 </div>
             : this.messageSwitch() }
           </div>
