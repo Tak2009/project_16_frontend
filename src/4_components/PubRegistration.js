@@ -52,30 +52,38 @@ class PubRegistration extends Component {
   render() {
     console.log(this.props)
     return (
-      <div>
+      <div className="background3">
+      <div className="form">
           <br/>
            <h3>Pub Registration Form</h3>
            <p>You will be redirected once you have completed your registration.</p>
-            <form onSubmit={this.handleOnSubmit} className="form_style"> 
-                <label>Pub Name: <input name="name" onChange={this.handleOnChange} type="text" className="input" value={this.state.name}/></label>
+            <form onSubmit={this.handleOnSubmit} > 
+                <label>Pub Name: <input name="name" onChange={this.handleOnChange} type="text" value={this.state.name}/></label>
                 <br/>
-                <label>Email: <input name="email" onChange={this.handleOnChange} type="text" className="input" value={this.state.email}/></label>
+                <label>Email: <input name="email" onChange={this.handleOnChange} type="text" value={this.state.email} /></label>
                 <br/>
-                <label>Phone: <input name="phone" onChange={this.handleOnChange} type="text" className="input" value={this.state.phone}/></label>
+                <label>Phone: <input name="phone" onChange={this.handleOnChange} type="text" value={this.state.phone}/></label>
                 <br/>
-                <label>Address: <input name="address" onChange={this.handleOnChange} type="text" className="input" value={this.state.address}/></label>
+                <label>Address: <input name="address" onChange={this.handleOnChange} type="text" value={this.state.address}/></label>
                 <br/>
-                <label>Postcode: <input name="postcode" onChange={this.handleOnChange} type="text" className="input" value={this.state.postcode}/></label>
+                <label>Postcode: <input name="postcode" onChange={this.handleOnChange} type="text" value={this.state.postcode}/></label>
                 <br/>
-                <label>Situation: <textarea name="situation" onChange={this.handleOnChange} type="text" className="input" value={this.state.situation}/></label>
+                <label>Situation: <textarea name="situation" onChange={this.handleOnChange} type="text" value={this.state.situation}/></label>
                 <br/>
-                <label>Message to Supporters: <textarea name="message_to_supporters" onChange={this.handleOnChange} type="text" className="input" value={this.state.message_to_supporters}/></label>
+                <label>Message to Supporters: <textarea name="message_to_supporters" onChange={this.handleOnChange} type="text" value={this.state.message_to_supporters}/></label>
                 <br/>
-                <label>Pub Image URL (jpg): <input name="image_pic" onChange={this.handleOnChange} type="text" className="input" value={this.state.image_pic}/></label>
+                <label>Pub Image URL (jpg): <input name="image_pic" onChange={this.handleOnChange} type="text" value={this.state.image_pic}/></label>
                 <br/>
                 <br/>
-                <input type="submit" value="Register"/>
+                <input type="submit" value="Register" className="font"/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
             </form>
+      </div>
       </div>
     );
   }
