@@ -11,7 +11,7 @@ export const setPubs = pubs => {
 
 export const fetchPubs = () => {
     return (dispatch) => {
-        fetch("http://localhost:3000/pubs")
+        fetch("https://local-pub-support-backend.herokuapp.com/pubs")
         .then(resp => resp.json())
         .then(pubs => {
             dispatch(setPubs(pubs));
@@ -21,7 +21,7 @@ export const fetchPubs = () => {
 
 export const createPub = (pub) => {
     return (dispatch) => {
-        fetch("http://localhost:3000/pubs", {
+        fetch("https://local-pub-support-backend.herokuapp.com/pubs", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

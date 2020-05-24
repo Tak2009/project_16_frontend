@@ -11,7 +11,7 @@ export const setTickets = tickets => {
 
 export const fetchTickets = () => {
     return (dispatch) => {
-        fetch("http://localhost:3000/tickets")
+        fetch("https://local-pub-support-backend.herokuapp.com/tickets")
         .then(resp => resp.json())
         .then(tickets => {
             dispatch(setTickets(tickets));
@@ -21,7 +21,7 @@ export const fetchTickets = () => {
 
 export const createTicket = (ticket) => {
     return (dispatch) => {
-        fetch("http://localhost:3000/tickets", {
+        fetch("https://local-pub-support-backend.herokuapp.com/tickets", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
