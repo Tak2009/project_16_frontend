@@ -7,7 +7,7 @@ const Home = () => {
           <div className={"background"}>
           <br/>
           <div className={"center"}>
-          <h1>Help Local Pubs in Your Area!</h1>
+          <h1>Your Local Pub Needs You!</h1>
           </div>
           <br/>
           <br/>
@@ -31,10 +31,10 @@ const Home = () => {
           <br/>
           <br/>
           <div className={"center2"}>
-          <h2>Through this website, pub owners can ask for help to supporters and supporters can support your businesses</h2>
-          <h2>During this time of coronavirus outbreak, a lot of businesses are facing financial challneges</h2>
-          <h2>Untill lockdown and restrictions on your businesses have been lifted, supporters can help pub owners financially!!</h2>
-          <h2>But how??</h2>
+          <h2>This website links pub owners with their local supporters, giving those supporters a way to help their local businesses.</h2>
+          <h2>During this time of Coronavirus, many businesses are facing real financial difficulties. Pubs are among those fighting for survival.</h2>
+          <h2>Use this website to help pub owners survive financially until the lockdown is lifted.</h2>
+          <h2>How does it work? Read on...</h2>
           </div>
           <br/>
           </div>

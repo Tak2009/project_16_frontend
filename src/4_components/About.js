@@ -9,9 +9,9 @@ const About = () => {
         <div className={"indend3"}>
         <h1>For Pub Owners:</h1>
         <ol >
-            <li>You can register your pub to ask for financial support from supporters.</li>
-            <li>You will need to issue tickets to supporters in exchnage for £10 per ticket.</li>
-            <li>You will need to offer food or drink when the supporters, who you issued tickets before, redeem the tickets.</li>
+            <li>Register your pub to gain financial support from your local supporters.</li>
+            <li>You will issue tickets to your supporters in multiples of £10 - minimum purchase is one £10 ticket.</li>
+            <li>When the lockdown is lifted, you welcome your guests with their tickets to exchange in your pub for food and/or drink.</li>
         </ol>
         </div>
         <br/>
@@ -23,9 +23,9 @@ const About = () => {
         <div className="indend2">
         <h1>For Supporters:</h1>
         <ol>
-            <li>You can buy a ticket which costs £10</li>
-            <li>A ticket you bought has expiry data: 3 months from your purchase date</li>
-            <li>You can use your tickets to buy food and drink at the pubs you purchased your tickets from</li>
+            <li>You can buy tickets in multiples of £10 - minimum purchase is one ticket for £10. </li>
+            <li>Any ticket you purchase has an expiry date - this is 6 months from the date of purchase.</li>
+            <li>When the lockdown is lifted, go ahead and return to your local with tickets in hand, ready to swap them for food and drink at your chosen pub(s).</li>
         </ol>
         </div>
         <br/>
