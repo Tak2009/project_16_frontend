@@ -40,10 +40,13 @@ class SupporterRegistration extends Component {
   render() {
     console.log(this.props)
     return (
-      <div>
+      <div className="background4">
           <br/>
-           <h3>Work in Progress........ZZZzzzz...   m(_ _ )m</h3>
-            {/* <form onSubmit={this.handleOnSubmit} className="form_style"> 
+           <h3>Work in Progress....</h3>
+           <iframe src="https://giphy.com/embed/stM3RHS60s6iI" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/wine-amy-schumer-stM3RHS60s6iI">via GIPHY</a></p>
+           <iframe src="https://giphy.com/embed/V6vYGxjArFFde" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/the-simpsons-beer-homer-simpson-V6vYGxjArFFde">via GIPHY</a></p>
+           <br/>
+           {/* <form onSubmit={this.handleOnSubmit} className="form_style"> 
                 <label>Pub Name: <input name="name" onChange={this.handleOnChange} type="text" className="input" value={this.state.name}/></label>
                 <br/>
                 <label>Email: <input name="email" onChange={this.handleOnChange} type="text" className="input" value={this.state.email}/></label>

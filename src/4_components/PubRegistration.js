@@ -53,10 +53,11 @@ class PubRegistration extends Component {
     console.log(this.props)
     return (
       <div className="background3">
+        <br/>
       <div className="form">
           <br/>
            <h3>Pub Registration Form</h3>
-           <p>You will be redirected once you have completed your registration.</p>
+           <p>You will be redirected to Pub List once you have completed your registration.</p>
             <form onSubmit={this.handleOnSubmit} > 
                 <label>Pub Name: <input name="name" onChange={this.handleOnChange} type="text" value={this.state.name}/></label>
                 <br/>
@@ -82,6 +83,7 @@ class PubRegistration extends Component {
                 <br/>
                 <br/>
                 <br/>
+          
             </form>
       </div>
       </div>

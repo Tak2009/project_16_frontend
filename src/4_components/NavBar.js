@@ -9,7 +9,8 @@ const link = {
   margin: '0 6px 6px',
   background: 'blue',
   textDecoration: 'none',
-  color: 'white'
+  color: 'white',
+  'border-radius': '5px',
 }
 
 
@@ -19,7 +20,7 @@ const NavBar = () => {
     <div className="navbar">
       <NavLink 
         style={link} 
-        to="/"
+        exact to="/"
         activeStyle={{
           background: "darkblue"
         }}

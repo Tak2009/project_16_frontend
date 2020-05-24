@@ -21,7 +21,7 @@ class PubList extends React.Component {
         console.log(this.props)
         return (
             <div className="list">
-              <h2 className="indend">Pub List</h2>
+              <h2 className="indend">1. Pub List</h2>
                 {this.renderPubs()}
             </div>
         )

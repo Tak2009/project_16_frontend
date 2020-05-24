@@ -97,6 +97,12 @@
   padding-left: 100px;
 }
 
+.background4 {
+  color: white;
+  background: url(./img/4.jpg) center center / cover no-repeat fixed;
+  padding-left: 100px;
+}
+
 .center {
   text-align: center;
   font-size: xx-large;
@@ -126,6 +132,19 @@
 .font {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: xx-large;
+}
+
+.link {
+  width: '100px';
+  padding: '1px';
+  margin: '0 6px 6px';
+  background: 'blue';
+  color: 'white';
+  border-radius: 20px;
+}
+
+h4 {
+  color:blue
 }
 
 

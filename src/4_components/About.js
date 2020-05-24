@@ -5,6 +5,7 @@ const About = () => {
 
     return (
       <div className={"background2"}>
+        <br/>
         <div className={"indend3"}>
         <h1>For Pub Owners:</h1>
         <ol >

@@ -5,6 +5,7 @@ const Home = () => {
  
     return (
           <div className={"background"}>
+          <br/>
           <div className={"center"}>
           <h1>Help Local Pubs in Your Area!</h1>
           </div>
@@ -35,7 +36,6 @@ const Home = () => {
           <h2>Untill lockdown and restrictions on your businesses have been lifted, supporters can help pub owners financially!!</h2>
           <h2>But how??</h2>
           </div>
-          <br/>
           <br/>
           </div>
       );
