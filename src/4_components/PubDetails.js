@@ -17,7 +17,7 @@ class PubDetails extends React.Component {
     render() {
       console.log(this.props)
       return (
-          <div className="indend4">
+          <div className="indent4">
               { this.selectPub() ?
                 <div className="details">
                     <Pub pub={this.selectPub()}/>

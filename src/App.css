@@ -57,28 +57,27 @@
   object-fit: cover;
 }
 
-.indend{
-  text-indent: 1em;
+.indent{
+  text-indent: 0em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.indend3{
-  text-indent: 1em;
+.indent3{
+  text-indent: 0em;
   padding-left: 485px;
 }
 
-.indend2{
-  text-indent: 1em;
+.indent2{
+  text-indent: 0em;
   
 }
 
-.indend4{
+.indent4{
   text-indent: 0em;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .background {
-  color: white;
   background: url(./img/3.jpg) center center / cover no-repeat fixed;
 }
 
@@ -147,9 +146,20 @@ h4 {
   color:blue
 }
 
-
 /* input {}
 
 textarea {
   rows: "10";
 } */
+
+.blend-text{
+	/* font-size:70px; */
+	font-weight:bold;
+	color:white;
+  mix-blend-mode: screen; /*値を変更すれば様々な効果を与えられます*/
+}
+
+.blur{
+  -ms-filter: blur(6px);
+  filter: blur(6px);
+}
