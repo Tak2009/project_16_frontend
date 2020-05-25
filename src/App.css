@@ -77,6 +77,12 @@
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.indent5{
+  text-indent: 0em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-left: 20px;
+}
+
 .background {
   background: url(./img/3.jpg) center center / cover no-repeat fixed;
 }
