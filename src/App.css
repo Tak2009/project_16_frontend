@@ -84,7 +84,12 @@
 }
 
 .background {
-  background: url(./img/3.jpg) center center / cover no-repeat fixed;
+  /* background: url(./img/3.jpg) center center / cover no-repeat fixed; */
+  background: url(./img/3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .background2 {
@@ -122,8 +127,21 @@
 
 .navbar {
   text-align: center;
-  font-size: large;
+  font-size: x-large;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #111;
+  padding: 1px;
+}
+
+ul.header li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+
+ul.header {
+  background-color: #111;
+  padding: 0;
 }
 
 .form {
