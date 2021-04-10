@@ -1,3 +1,14 @@
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ----------------------------------------------- */
+
 .container {
   display: grid;
   
@@ -84,30 +95,44 @@
 }
 
 .background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   /* background: url(./img/3.jpg) center center / cover no-repeat fixed; */
   background: url(./img/3.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  background-color: #464646;
 }
 
 .background2 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   color: white;
   background: url(./img/2.jpg) center center / cover no-repeat fixed;
   font-size: x-large;
   font-style: oblique ;
   font-weight: bold;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background-color: #464646;
 }
 
 .background3 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   color: white;
   background: url(./img/1.jpg) center center / cover no-repeat fixed;
   padding-left: 100px;
 }
 
 .background4 {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
   color: white;
   background: url(./img/4.jpg) center center / cover no-repeat fixed;
   padding-left: 100px;
@@ -136,7 +161,10 @@
 ul.header li {
   display: inline;
   list-style-type: none;
-  margin: 0;
+  width: 100px;
+  padding: 1px;
+  margin: 10px 6px 6px;
+  color: rgb(243, 236, 236);
 }
 
 ul.header {
