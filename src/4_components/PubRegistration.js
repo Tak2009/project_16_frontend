@@ -83,7 +83,6 @@ class PubRegistration extends Component {
                 <br/>
                 <br/>
                 <br/>
-          
             </form>
       </div>
       </div>

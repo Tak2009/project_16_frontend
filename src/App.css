@@ -20,12 +20,12 @@
 
 .header {
   grid-area: header;
-  background: yellow;
+  /* background: yellow; */
 }
 
 .footer {
   grid-area: footer;
-  background: yellow;
+  /* background: yellow; */
 }
 
 .details {
@@ -43,6 +43,7 @@
   overflow: hidden;
   padding-top: 60%; /* 比率 */
 }
+
 .image-trim img {
   position: absolute;
   top: 55%;
@@ -58,6 +59,7 @@
   overflow: hidden;
   padding-top: 60%; /* 比率 */
 }
+
 .image-trim-2 img {
   position: absolute;
   top: 55%;
@@ -75,11 +77,11 @@
 
 .indent3{
   text-indent: 0em;
-  padding-left: 485px;
+  padding-left: 10%;
 }
 
 .indent2{
-  text-indent: 0em;
+  text-indent: 5%;
   
 }
 
@@ -94,6 +96,17 @@
   padding-left: 20px;
 }
 
+.background::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.4);
+}
+
 .background {
   position: relative;
   width: 100%;
@@ -104,7 +117,29 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-color: #464646;
+  /* background-color: #464646; */
+}
+
+.background2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.5);
+}
+
+.background2::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.5);
 }
 
 .background2 {
@@ -120,14 +155,36 @@
   background-color: #464646;
 }
 
+/* .form::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.5);
+} */
+
 .background3 {
   position: relative;
   width: 100%;
   min-height: 100vh;
   color: white;
   background: url(./img/1.jpg) center center / cover no-repeat fixed;
-  padding-left: 100px;
+  /* padding-left: 100px; */
 }
+
+/* .background4::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0, 0.5);
+} */
 
 .background4 {
   position: relative;
@@ -135,7 +192,7 @@
   min-height: 100vh;
   color: white;
   background: url(./img/4.jpg) center center / cover no-repeat fixed;
-  padding-left: 100px;
+  /* padding-left: 100px; */
 }
 
 .center {
@@ -154,23 +211,28 @@
   text-align: center;
   font-size: x-large;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  background-color: #111;
+  /* background-color: #111; */
   padding: 1px;
 }
 
 ul.header li {
   display: inline;
-  list-style-type: none;
+  /* list-style-type: none; */
   width: 100px;
   padding: 1px;
   margin: 10px 6px 6px;
-  color: rgb(243, 236, 236);
+  color: rgb(8, 6, 6);
 }
 
 ul.header {
-  background-color: #111;
+  /* background-color: rgb(77, 74, 74); */
   padding: 0;
 }
+
+/* ol {
+  zoom: normal;
+  list-style-type: lower-lati;
+} */
 
 .form {
   text-indent: 0em;
@@ -211,7 +273,7 @@ textarea {
   mix-blend-mode: screen; /*値を変更すれば様々な効果を与えられます*/
 }
 
-.blur{
+/* .blur{
   -ms-filter: blur(6px);
   filter: blur(6px);
-}
+} */
